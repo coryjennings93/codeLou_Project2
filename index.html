@@ -17,13 +17,15 @@
 <body>
     <header>
 
-    <div class="menu-bar clearfix" >
+    <div class="menu-bar flex-container clearfix" >
       <p>When Mountains <br>
          Speak</p>
       <nav class="main-menu">
-        <a href="#home" id="firstItem">home</a>
-        <a href="#about">about</a>
-        <a href="#contact">contact</a>
+        <a href="#home" id="firstItem">Home</a>
+        <a href="#">Mission</a>
+        <a href="#">Alternatives</a>
+        <a href="#">More Steps</a>
+        <a href="#">Contact</a>
       </nav>
     </div>
     <div class="header-pic">
@@ -41,7 +43,9 @@
       </p>
       
     </div>
-    
+  </main>
+
+  <section>
     <div class="mountains triangle-up moreinfo">
         <h2>Mountain2</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, lacus ut egestas placerat, dui metus pretium diam, id elementum turpis justo in diam. Donec ultricies mauris vel velit pellentesque efficitur. Donec vel orci nisl. 
@@ -51,29 +55,79 @@
           </p>
       </div> 
     </div>
+  </section>
 
+  <section>
     <div class="mountains triangle-up moreinfo">
         <h2>Clean water</h2>
         <p>In 2002, the Bush Administration changed the definition of “fill material” in the Clean Water Act to include toxic mining waste, which allowed coal companies to legally dump the debris, called “overburden” or “spoil,” into nearby valleys. These “valley fills” have buried more than 2,000 miles of headwater streams and polluted many more.
           </p>
     </div>
-  </main>
+  </section>
+
+  <section>
+    <div id="showContainer">
+
+      <div class="imageContainer" id="im_1">
+        <img src="Images/1.jpg" />
+        <div class="caption">
+          Windmill
+        </div>
+      </div>
+
+      <div class="imageContainer" id="im_2">
+        <img src="Images/2.jpg" />
+        <div class="caption">
+          Plant
+        </div>
+      </div>
+
+      <div class="imageContainer" id="im_3">
+        <img src="Images/3.jpg" />
+        <div class="caption">
+          Dog
+        </div>
+      </div>
+
+      <div class="navButton" id="previous">&#10094;</div>
+      <div class="navButton" id="next">&#10095;</div>
+    </div>
+  </section>
+
+  <div class="flex-container trees-above-footer">
+    <img src="img/evergreen.png" alt="Evergreen Tree">
+    <img src="img/oak2.png" alt="Oak Tree">
+    <img src="img/evergreen.png" alt="Evergreen Tree">
+    <img src="img/oak2.png" alt="Oak Tree">
+    <img src="img/evergreen.png" alt="Evergreen Tree">
+    <img src="img/oak2.png" alt="Oak Tree">
+    <img src="img/evergreen.png" alt="Evergreen Tree">
+    <img src="img/oak2.png" alt="Oak Tree">
+  </div>
 
   <footer role="contentinfo">
-    <div class="flex-container">
-      <div>
-        <p>Earth without art is just <i>eh</i></p>
+    <div class="flex-container-lg red">
+      <div class="footer-flex-1">
+        <h2>Save Your Planet!</h2>
+        <img src="img/recycleEarth.png" alt="Earth Recycle">
+        <p>Give the children something to <i>live</i> for.</p>
       </div>
-      <div>
-          <nav>
-            <a href="#">Home</a>
-            <a href="#">Mission</a>
-            <a href="#">More Steps</a>
-          </nav>
+      <div class="footer-flex-2">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Mission</a>
+          <a href="#">Alternatives</a>
+          <a href="#">More Steps</a>
+          <a href="#">Contact</a>
+        </nav>
       </div>
-      <div>
-        <h3>Contact Us</h3>
-        <label for="contact"
+      <div class="footer-flex-3">
+        <h4>Join people worldwide recieving our newsletter with tips for reducing your carbon footprint</h4>
+        <form action="" class="footer-form">
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" name="email" placeholder="someone@example.com">
+          <button type="submit" value="Submit">Sign Up!</button>
+        </form>
       </div>
     </div>
   </footer>

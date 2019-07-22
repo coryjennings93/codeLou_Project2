@@ -2,6 +2,10 @@
     background-image: linear-gradient(#FFB7B2, #E2F0CB, #B5EAD7, #C7CEEA, #C7CEEA, #C7CEEA);
 } */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
@@ -10,7 +14,6 @@ a {
     text-decoration: none;
 }
 .menu-bar {
-    display: flex;
     background-color: #E4572E;
     color: white;
     padding: 0 1em;
@@ -51,7 +54,7 @@ margin:1em;
     border-bottom: 100px solid red;
 } */
 
-.header {
+.flex-container {
     display: flex;
 
 }
@@ -70,19 +73,82 @@ margin:1em;
     border: 1em solid #ffdb58;
 }
 
-.flex-container {
-    display: flex;
+.trees-above-footer img {
+    flex: 1;
+    width: 12.5%;
+    color: #556B2F;
 }
 
 footer{
     background-color: #556B2F;
+    color: #dfe0cc;
+    text-align: center;
 }
 
+.footer-flex-1 h2 {
+    margin: 0;
+    padding: 1em 0 .3em;
+}
 
+.footer-flex-1 img {
+    width: 25%;
+    min-width: 125px;
+}
 
-footer nav a {
+.footer-flex-1 p {
+    margin: 0 ;
+}
+
+.footer-flex-2 {
+    margin: 1.3em 0;
+}
+
+.footer-flex-2 nav a {
     display: block;
+    color: #9ce7e8;
+    font-size: 1.2em;
+    text-decoration: none;
+    width: 30%;
+    margin: auto; 
+    padding: .2em 0;    
 }
+
+.footer-flex-2 nav a:hover {
+    color: #e4562e;
+}
+
+.footer-flex-3 h4 {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-form {
+    padding: .5em 0;
+}
+
+.footer-form input {
+    width: 60%;
+    min-width: 10rem;
+    max-width: 15rem;
+}
+
+button {
+    color: red;
+}
+
+/* For Accessability purposes */
+.visually-hidden 
+{position:absolute;
+/*    left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden; */
+
+    opacity: 0;
+    pointer-events: none;
+  }
 
 
 @media only screen and (max-width: 600px) {
@@ -91,22 +157,32 @@ footer nav a {
     }
   }
 
-  // Small devices (landscape phones, 576px and up)
+  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     
  }
  
-// Medium devices (tablets, 768px and up)
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    
+    .flex-container-lg {
+        display: flex;
+    }
+    .flex-container-lg > div {
+        width: 33.33%;
+        text-align: center;
+        flex: 1;
+    }
  }
  
-// Large devices (desktops, 992px and up)
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     
+
+
+    
  }
  
-// Extra large devices (large desktops, 1200px and up)
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     
  }
