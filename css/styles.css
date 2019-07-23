@@ -8,6 +8,7 @@
 
 body {
     margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 a {
@@ -26,6 +27,22 @@ a {
 .menu-bar p {
     margin-right: auto;
 }
+
+.menu-bar button {
+    border: .3rem solid #eabd00;
+    background-color: #e3efd9;
+    padding: 0 1rem;
+    font-size: .9rem;
+}
+
+.menu-bar button:hover {
+    background-color: 
+}
+
+.menu-bar nav {
+    display: none;
+}
+
 .header-pic {
     background-color: #17BEBB /* #83F04D */;
     padding: 1em 0 2em 0;
@@ -83,11 +100,12 @@ footer{
     background-color: #556B2F;
     color: #dfe0cc;
     text-align: center;
+    padding: 1.5rem;
 }
 
 .footer-flex-1 h2 {
     margin: 0;
-    padding: 1em 0 .3em;
+    padding: 0 0 .3em;
 }
 
 .footer-flex-1 img {
@@ -97,30 +115,42 @@ footer{
 
 .footer-flex-1 p {
     margin: 0 ;
+    padding: 0 .3rem;
 }
 
 .footer-flex-2 {
-    margin: 1.3em 0;
+    margin: 1.3em 0 0;
 }
 
 .footer-flex-2 nav a {
-    display: block;
+    display: inline-block;
     color: #9ce7e8;
     font-size: 1.2em;
     text-decoration: none;
-    width: 30%;
     margin: auto; 
-    padding: .2em 0;    
+    padding: .2em 0;
+    font-weight: bold;    
 }
 
 .footer-flex-2 nav a:hover {
-    color: #e4562e;
+    color: #fa8733;
+}
+
+.footer-flex-2 ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer-flex-2 li {
+    list-style: none;
 }
 
 .footer-flex-3 h4 {
     text-align: left;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    margin-bottom: .4rem;
+    padding-top: 1rem;
 }
 
 .footer-form {
@@ -128,14 +158,27 @@ footer{
 }
 
 .footer-form input {
-    width: 60%;
-    min-width: 10rem;
-    max-width: 15rem;
+    width: 90%;
+    font-size: 1rem;
+    padding: .2rem;
 }
 
-button {
-    color: red;
+.footer-flex-3 button {
+    color: #556B2F;
+    background-color: #dfe0cc;
+    font-size: 1rem;
+    padding: .4rem .8rem;
+    border: 2px;
+    margin-top: .7rem;
+    width: 90%;
+    border-radius: .5rem;
 }
+
+.footer-flex-3 button:hover {
+    background-color: #fa8733;
+}
+
+
 
 /* For Accessability purposes */
 .visually-hidden 
@@ -159,6 +202,12 @@ overflow:hidden; */
 
   /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
+   /* .footer-form input {
+        width: 60%;
+        min-width: 12rem;
+        max-width: 15rem;
+    } */
+    
     
  }
  
