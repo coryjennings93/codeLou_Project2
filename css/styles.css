@@ -27,6 +27,9 @@ a {
 
 }
 
+.background-circle{
+    border-radius: 100%;
+}
 
 header {
     /* background-color: #17BEBB; */
@@ -72,7 +75,7 @@ svg {
     
     bottom: 0;
     width: 100%;
-    height: 200px;
+    height: 75px;
     margin-bottom: -5px;
   }
 
@@ -80,12 +83,9 @@ h1 {text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298
 }
 
 main .item-1 {
-    margin-left: auto;
-    padding-right: 3rem;
-}
-
-main .item-1 {
-    text-align: right;
+    width: 95%;
+    margin: auto;
+    text-align: center;
 }
 
 main .item-1 p {
@@ -94,8 +94,8 @@ main .item-1 p {
 }
 
 main .item-1 h2 {
-    text-align: right;
     margin-top: 0;
+    padding-top: 2rem;
 }
 
 .mountains {
@@ -127,8 +127,9 @@ header .item-1 {
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left: 1em;
-    margin-top: 2rem;
+    padding-top: 3rem;
+    text-align: center;
+    margin: 2rem auto;
 }
 
 header .item-2 {
@@ -137,8 +138,8 @@ header .item-2 {
     grid-column-start: 1;
     grid-column-end: 2;
     font-size: 2.3em;
-    margin-bottom: 0;
-    padding-top: 2rem;
+    margin: 5rem 0 0 0;
+    text-align: center;
 }
 
 header .item-3 {
@@ -146,16 +147,17 @@ header .item-3 {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin: 0 0 0 .5em;
+    margin: 0 0 0 0;
+    text-align: center;
     
 }
 
 header .item-4 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    text-align: end;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
 }
 /* ---- Main Navigation ---- */
 .main-menu li {
@@ -180,12 +182,11 @@ header .item-4 {
     background-color: #EABD00 /*#ffdb58*/;
     height:200px;
     width: 200px;
-    border-radius: 100%
 }
 
 .header-circle {
-    padding: 1em 0 0 6em;
-    /* background-color: #EABD00 #ffdb58;
+    /* padding: 1em 0 0 6em;
+    background-color: #EABD00 #ffdb58;
     height:200px;
     width: 200px;
     border-radius: 100%; */
@@ -287,7 +288,16 @@ footer{
     background-color: #fa8733;
 }
 
+/* --- HOME PAGE --- */
+.home-articles-container {
+    padding: 
+}
 
+.article-circle {
+    background-color: rgb(118,176,65, .2);
+    width: 200px;
+    height: 200px
+}
 
 /* For Accessability purposes */
 .visually-hidden 
@@ -300,17 +310,53 @@ overflow:hidden; */
 
     opacity: 0;
     pointer-events: none;
-  }
+}
+
+.svg-lg {
+    display: none;
+}
+
 
 
 @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
     }
-  }
+}
 
-  /* Small devices (landscape phones, 576px and up) */
+
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
+    main .item-1 {
+        width: 90%;
+    }
+
+    header .item-1 {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin: 3em 0 0 7em;
+    }
+    
+    header .item-2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        font-size: 2.3em;
+        margin: 5rem 0 0 6rem;
+    }
+    
+    header .item-3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin: 0 0 0 6.5rem;
+        
+    }
+
    /* .footer-form input {
         width: 60%;
         min-width: 12rem;
@@ -318,7 +364,7 @@ overflow:hidden; */
     } */
     
     
- }
+}
  
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -343,6 +389,37 @@ overflow:hidden; */
     }
     .home-articles {
         width: 80%;
+    }
+    main .item-1 {
+        margin-left: auto;
+        padding-right: 3rem;
+        text-align: right;
+        min-width: 725px;
+    }
+    main .item-1 h2 {
+        text-align: right;
+    }
+    header .item-4 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: end;
+    }
+
+    /* SVG */
+    svg{
+        height: 200px;
+    }
+    .svg-lg {
+        display: block;
+    }
+    .svg-sm {
+        display: none;
+    }
+    main .item-1 h2 {
+        margin-top: 0;
+        padding-top: 0;
     }
  }
  
