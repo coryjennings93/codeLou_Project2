@@ -22,7 +22,7 @@
          Speak</p>
       <button>MENU</button>
       <nav class="main-menu" role="navigation">
-        <ul>
+        <ul class="grid-container">
           <li><a href="#home">Home</a></li>
           <li><a href="#">Mission</a></li>
           <li><a href="#">Alternatives</a></li>
@@ -37,14 +37,14 @@
           <div class="circle background-circle item-1"></div>
           <h1 class="item-2">Protect Our Earth!</h1>
           <p class="item-3"><i>"A Future Worth Fighting For"</i></p>
-          <nav class="main-menu item-4" role="navigation">
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Alternatives</a></li>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">More</a></li>
+          <nav class="main-nav item-4" role="navigation">
+              <ul class="grid-container">
+                <li class="li-item-1"><a href="#home">Home</a></li>
+                <li class="li-item-2"><a href="#">Mission</a></li>
+                <li class="li-item-3"><a href="#">Alternatives</a></li>
+                <li class="li-item-4"><a href="#">Action</a></li>
+                <li class="li-item-5"><a href="#">Contact</a></li>
+                <li class="li-item-6"><a href="#">More</a></li>
               </ul>
             </nav>
           <img src="img/mountain.jpg" alt="Mountains">
@@ -57,71 +57,70 @@
   </header>
 
   <div class="page-content">
-    <main class="main">
-        
-      <div class="home-articles triangle-up moreinfo item-1">
-        <h2>Our Vision</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, lacus ut egestas placerat, dui metus pretium diam, id elementum turpis justo in diam. Donec ultricies mauris vel velit pellentesque efficitur. Donec vel orci nisl. Aenean congue libero quis euismod tristique. Maecenas eu feugiat lorem. Etiam vel sollicitudin purus. In rhoncus ut ante eget eleifend. Proin sit amet sollicitudin massa. Praesent purus nisi, congue id elit eu, porta vestibulum nisl. Fusce congue et diam imperdiet dapibus. Praesent bibendum metus elit, ac porta libero tincidunt vitae. Vivamus tempor turpis urna, ac mollis elit cursus sed. Nunc eget nisl finibus, dictum leo eget, pretium eros. Donec ultrices, magna fermentum facilisis sagittis, tortor sem suscipit risus, at blandit massa nisl sed risus.
-        </p>
-        
-      </div>
+
+    <!-- This section is the main content of the home page and contains the mission statement -->
+    <main class="main home-articles moreinfo item-1">
+      <h2>Our Vision</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, lacus ut egestas placerat, dui metus pretium diam, id elementum turpis justo in diam. Donec ultricies mauris vel velit pellentesque efficitur. Donec vel orci nisl. Aenean congue libero quis euismod tristique. Maecenas eu feugiat lorem. Etiam vel sollicitudin purus. In rhoncus ut ante eget eleifend. Proin sit amet sollicitudin massa. Praesent purus nisi, congue id elit eu, porta vestibulum nisl. Fusce congue et diam imperdiet dapibus. Praesent bibendum metus elit, ac porta libero tincidunt vitae. Vivamus tempor turpis urna, ac mollis elit cursus sed. Nunc eget nisl finibus, dictum leo eget, pretium eros. Donec ultrices, magna fermentum facilisis sagittis, tortor sem suscipit risus, at blandit massa.
+      </p>
     </main>
 
-    <section>
-      <div class="triangle-up moreinfo grid-container">
+    <!-- This contains two of the most recent articles posted -->
+    <section class="">
+      <div class="home-articles-container moreinfo grid-container recent-articles">
         <article class="home-articles">
-          <h2>Mountain2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, lacus ut egestas placerat, dui metus pretium diam, id elementum turpis justo in diam. Donec ultricies mauris vel velit pellentesque efficitur. Donec vel orci nisl. 
+          <h2>Single-Use Plastic</h2>
+          <p>Are You tired of relying on single use plastics to get your needs met? Are you feeling hopeless about alternatives? Donec sodales, lacus ut egestas placerat, dui metus pretium diam, id elementum turpis justo in diam. Donec ultricies mauris vel velit pellentesque efficitur. Donec vel orci nisl. 
           </p>
           <div class="extrainfo"> 
             <p >Aenean congue libero quis euismod tristique. Maecenas eu feugiat lorem. Etiam vel sollicitudin purus. In rhoncus ut ante eget eleifend. Proin sit amet sollicitudin massa. Praesent purus nisi, congue id elit eu, porta vestibulum nisl. Fusce congue et diam imperdiet dapibus. Praesent bibendum metus elit, ac porta libero tincidunt vitae. Vivamus tempor turpis urna, ac mollis elit cursus sed. Nunc eget nisl finibus, dictum leo eget, pretium eros. Donec ultrices, magna fermentum facilisis sagittis, tortor sem suscipit risus, at blandit massa nisl sed risus.
             </p>
           </div> 
         </article>
-        <div class="background-circle article-circle"></div>
+        <div class="background-circle article-circle article-circle-1"></div>
       </div>
-    </section>
+    
 
-    <section>
-      <div class="home-articles-container triangle-up moreinfo grid-container">
+    
+      <div class="home-articles-container2 moreinfo grid-container recent-articles">
         <article class="home-articles">
           <h2>Clean water</h2>
           <p>In 2002, the Bush Administration changed the definition of “fill material” in the Clean Water Act to include toxic mining waste, which allowed coal companies to legally dump the debris, called “overburden” or “spoil,” into nearby valleys. These “valley fills” have buried more than 2,000 miles of headwater streams and polluted many more.
           </p>
         </article>
+        <div class="background-circle article-circle article-circle-2"></div>
       </div>
-      <div class="background-circle article-circle"></div>
     </section>
+    <!-- End of the two most recent articles -->
 
-    <section>
-      <div id="showContainer">
 
+   
+    <div id="slideshow-container">
+      <div id="slideshow-wrapper">
         <div class="imageContainer" id="im_1">
-          <img src="Images/1.jpg" />
-          <div class="caption">
-            Windmill
-          </div>
+          <img class="slideImage show" src="img/plastic_in_lake.jpg"  />
+        
+
+        
+          <img class="slideImage" src="img/mountaintop_removal.jpg" />
+        
+
+        
+          <img class="slideImage" src="img/smoggy_air.jpg" />
         </div>
 
-        <div class="imageContainer" id="im_2">
-          <img src="Images/2.jpg" />
-          <div class="caption">
-            Plant
-          </div>
-        </div>
-
-        <div class="imageContainer" id="im_3">
-          <img src="Images/3.jpg" />
-          <div class="caption">
-            Dog
-          </div>
-        </div>
-
-        <div class="navButton" id="previous">&#10094;</div>
-        <div class="navButton" id="next">&#10095;</div>
+        <button class="navButton" id="prev">&#10094;</button>
+        <button class="navButton" id="next">&#10095;</button>
       </div>
-    </section>
+    </div>
+   
 
+    <aside class="recent-news">
+      <h2>Recent News</h2>
+    </aside>
+
+
+    <!-- Row of trees above the footer -->
     <div class="flex-container trees-above-footer">
       <img src="img/evergreen.png" alt="Evergreen Tree">
       <img src="img/oak2.png" alt="Oak Tree">
@@ -134,6 +133,7 @@
     </div>
   </div>
 
+  <!-- FOOTER -->
   <footer role="contentinfo">
     <div class="flex-container-lg red">
       <div class="footer-flex-1">
